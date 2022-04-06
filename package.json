@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve --open",
     "build": "webpack",
-    "deploy": "yarn build && echo 'dsuh.me' > ./build/CNAME && gh-pages -d build"
+    "deploy": "yarn build && echo 'gracedanmarry.farm' > ./build/CNAME && gh-pages -d build"
   },
   "repository": {
     "type": "git",
