@@ -1,3 +1,4 @@
+import { h } from "preact";
 import "./reset.css";
 import * as Styled from "./styled";
 

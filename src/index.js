@@ -1,10 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import { h, render } from "preact";
 import Home from "./Home";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+render(<Home />, document.getElementById("root"));
