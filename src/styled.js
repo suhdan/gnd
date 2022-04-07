@@ -4,11 +4,11 @@ import selfie from "./assets/selfie-bg.jpg";
 const fadeIn = keyframes`
   from {
     opacity: 0;
-    margin-left: -25px;
+    transform: translateX(-25px);
   }
   to {
     opacity: 0.95;
-    margin-left: 0;
+    transform: translateX(0px);
   }
 `;
 
@@ -45,6 +45,7 @@ export const SaveDate = styled.div`
   animation-delay: 0.2s;
   animation-fill-mode: forwards;
   padding-left: 20%;
+  border-radius: 5px;
 
   @media (max-width: 900px) {
     background: white;
@@ -74,8 +75,8 @@ export const Links = styled.div`
 export const DelayMsg = styled.p`
   opacity: 0;
   animation-name: ${fadeIn};
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
   animation-timing-function: ease-out;
-  animation-delay: 1.5s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 `;
