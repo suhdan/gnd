@@ -28,7 +28,7 @@ const Home = () => {
             </a>
           </Styled.Links>
           <br />
-          <p>more to come ;)</p>
+          <Styled.DelayMsg>more to come ;)</Styled.DelayMsg>
         </Styled.SaveDate>
       </Styled.Home>
     </Styled.Base>

@@ -1,5 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import selfie from "./assets/selfie-bg.jpg";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    margin-left: -25px;
+  }
+  to {
+    opacity: 0.95;
+    margin-left: 0;
+  }
+`;
 
 export const Base = styled.div`
   font-family: "Nunito", sans-serif;
@@ -27,11 +38,16 @@ export const Home = styled.div`
 `;
 
 export const SaveDate = styled.div`
+  opacity: 0;
+  animation-name: ${fadeIn};
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
   padding-left: 20%;
 
   @media (max-width: 900px) {
     background: white;
-    opacity: 0.95;
     padding: 1rem;
     margin-left: 1.5rem;
   }
@@ -53,4 +69,13 @@ export const Links = styled.div`
   > * {
     margin-right: 0.5rem;
   }
+`;
+
+export const DelayMsg = styled.p`
+  opacity: 0;
+  animation-name: ${fadeIn};
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
 `;
