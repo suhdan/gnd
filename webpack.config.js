@@ -27,7 +27,7 @@ module.exports = {
         use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
-        test: /\.jpg$/,
+        test: /\.(jpg)$/,
         use: ["file-loader"],
       },
     ],

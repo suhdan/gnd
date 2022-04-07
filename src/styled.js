@@ -47,6 +47,10 @@ export const SaveDate = styled.div`
   padding-left: 20%;
   border-radius: 5px;
 
+  @media (max-width: 1200px) {
+    margin-top: -10%;
+  }
+
   @media (max-width: 900px) {
     background: white;
     padding: 1rem;
