@@ -2,10 +2,15 @@ import styled from "styled-components";
 import selfie from "./assets/selfie-bg.jpg";
 
 export const Base = styled.div`
-  font-family: "Libre Baskerville", serif;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.4rem;
   width: 100%;
   height: 100%;
   line-height: 1.2;
+
+  @media (max-width: 700px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const Home = styled.div`
@@ -35,6 +40,15 @@ export const SaveDate = styled.div`
 export const Links = styled.div`
   display: flex;
   flex-direction: row;
+
+  a {
+    color: black !important;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 
   > * {
     margin-right: 0.5rem;

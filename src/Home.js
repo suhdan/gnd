@@ -4,6 +4,7 @@ import * as Styled from "./styled";
 
 const Home = () => {
   console.log(`hi! dan here. whatcha lookin for?`);
+
   return (
     <Styled.Base>
       <Styled.Home>
@@ -21,7 +22,7 @@ const Home = () => {
             <p> | </p>
             <a
               target="_blank"
-              href="https://calendar.google.com/calendar/u/0/r/eventedit/copy/MmpkcHR0NGdqNGFncW1nczZzcmdoMGVtb2YgZ3JhY2UuYWxzby5kYW5AbQ/ZGFuc3VoMzU5M0BnbWFpbC5jb20?sf=true"
+              href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MG5lZzVrZDF0ZzBvdWVtOWwxaDFldjdmNnMgZ3JhY2UuYWxzby5kYW5AbQ&tmsrc=grace.also.dan%40gmail.com"
             >
               gcal
             </a>
