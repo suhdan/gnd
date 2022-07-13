@@ -33,7 +33,7 @@ const Home = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  console.log(`hi! dan here. whatcha lookin for?`);
+  console.log(`whatcha lookin' for?`);
 
   const checkPath = (pathName) => PATHS[pathName].includes(path);
 
