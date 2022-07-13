@@ -30,6 +30,14 @@ module.exports = {
         test: /\.(jpg)$/,
         use: ["file-loader"],
       },
+      {
+        test: /\.svg$/,
+        use: ["svg-inline-loader"],
+      },
+      {
+        test: /\.mp4$/,
+        use: ["url-loader"],
+      },
     ],
   },
   resolve: {

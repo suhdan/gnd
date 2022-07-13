@@ -1,4 +1,4 @@
 import { h, render } from "preact";
-import Home from "./Home";
+import App from "./App";
 
-render(<Home />, document.getElementById("root"));
+render(<App />, document.body);
