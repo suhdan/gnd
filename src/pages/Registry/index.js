@@ -6,11 +6,13 @@ const Registry = ({ isMobile, isActive }) => {
     <Styled.Registry isMobile={isMobile} isActive={isActive}>
       <Styled.ContentContainer>
         <Styled.Message>we love you :')</Styled.Message>
+        <Styled.Message>please buy us stuff</Styled.Message>
+        <br />
         <Styled.RegistryLink
           href="https://withjoy.com/daniel-and-grace-cl34g8pmv000o067xeb51onar/registry"
           target="_blank"
         >
-          please buy us stuff
+          registry
         </Styled.RegistryLink>
       </Styled.ContentContainer>
     </Styled.Registry>

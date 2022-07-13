@@ -33,18 +33,16 @@ export const NavLink = styled(Link)`
   transition: background 0.2s;
   background: ${({ isActive }) =>
     isActive ? "rgb(175 174 174 / 54%)" : "transparent"};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   :hover {
     background: rgb(175 174 174 / 54%);
   }
 `;
 
-export const RsvpContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 14px;
+export const LinkText = styled.div`
+  font-size: 1.4rem;
 `;
-
-export const RsvpLetter = styled.div``;

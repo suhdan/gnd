@@ -41,7 +41,7 @@ export const Message = styled.p`
 
   @media (min-width: 900px) {
     padding-bottom: 1.5rem;
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 `;
 

@@ -17,7 +17,7 @@ export const Form = styled.iframe`
   box-shadow: rgb(0 0 0 / 25%) 2px 7px 14px 6px;
 
   @media (min-width: 900px) {
-    margin-top: 5rem;
+    margin-top: 6rem;
     width: 450px;
     border-radius: 10%;
     border: 12px solid #ff5722;

@@ -1,32 +1,31 @@
 import { h } from "preact";
-import { BsHouse, BsInfoCircle } from "react-icons/bs";
+import { BsHouse, BsInfoCircle, BsCardChecklist } from "react-icons/bs";
 import { GoGift } from "react-icons/go";
 
 import { PATHS } from "../../constants";
-import * as S from "./styled";
+import * as Styled from "./styled";
 
 const NavBar = ({ currentPath, color }) => {
   const checkPath = (pathName) => PATHS[pathName].includes(currentPath);
   return (
-    <S.NavLinks color={color}>
-      <S.NavLink isActive={checkPath("HOME")} href={PATHS.HOME[0]}>
+    <Styled.NavLinks color={color}>
+      <Styled.NavLink isActive={checkPath("HOME")} href={PATHS.HOME[0]}>
         <BsHouse />
-      </S.NavLink>
-      <S.NavLink isActive={checkPath("DETAILS")} href={PATHS.DETAILS[0]}>
+        <Styled.LinkText>home</Styled.LinkText>
+      </Styled.NavLink>
+      <Styled.NavLink isActive={checkPath("DETAILS")} href={PATHS.DETAILS[0]}>
         <BsInfoCircle />
-      </S.NavLink>
-      <S.NavLink isActive={checkPath("REGISTRY")} href={PATHS.REGISTRY[0]}>
+        <Styled.LinkText>details</Styled.LinkText>
+      </Styled.NavLink>
+      <Styled.NavLink isActive={checkPath("REGISTRY")} href={PATHS.REGISTRY[0]}>
         <GoGift />
-      </S.NavLink>
-      <S.NavLink isActive={checkPath("RSVP")} href={PATHS.RSVP[0]}>
-        <S.RsvpContainer>
-          <S.RsvpLetter>R</S.RsvpLetter>
-          <S.RsvpLetter>S</S.RsvpLetter>
-          <S.RsvpLetter>V</S.RsvpLetter>
-          <S.RsvpLetter>P</S.RsvpLetter>
-        </S.RsvpContainer>
-      </S.NavLink>
-    </S.NavLinks>
+        <Styled.LinkText>registry</Styled.LinkText>
+      </Styled.NavLink>
+      <Styled.NavLink isActive={checkPath("RSVP")} href={PATHS.RSVP[0]}>
+        <BsCardChecklist />
+        <Styled.LinkText>rsvp</Styled.LinkText>
+      </Styled.NavLink>
+    </Styled.NavLinks>
   );
 };
 
